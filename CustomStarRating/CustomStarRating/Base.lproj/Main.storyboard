@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomStarRating" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ILT-5E-lBy" customClass="StarView" customModule="CustomStarRating" customModuleProvider="target">
+                                <rect key="frame" x="107" y="54" width="200" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="CTB-F9-tT8"/>
+                                    <constraint firstAttribute="height" constant="50" id="f62-nD-XMB"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A0c-fG-F7g" customClass="ImmutableStarsView" customModule="CustomStarRating" customModuleProvider="target">
+                                <rect key="frame" x="107" y="423" width="200" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Mnr-38-DuX"/>
+                                    <constraint firstAttribute="height" constant="50" id="hXs-ko-nPD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ILT-5E-lBy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="3k9-nY-w0i"/>
+                            <constraint firstItem="A0c-fG-F7g" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ejf-5W-Pdi"/>
+                            <constraint firstItem="A0c-fG-F7g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H72-Yw-Jcl"/>
+                            <constraint firstItem="ILT-5E-lBy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XyW-gj-tYg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="starView" destination="A0c-fG-F7g" id="dq6-ag-Hco"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="117"/>
+        </scene>
+    </scenes>
+</document>
